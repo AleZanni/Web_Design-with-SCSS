@@ -1,4 +1,13 @@
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 2rem;
+  justify-content: space-evenly;
 }
