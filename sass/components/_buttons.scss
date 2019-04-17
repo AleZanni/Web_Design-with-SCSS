@@ -26,6 +26,15 @@
     background-color: $color-white;
   }
   
+  &--green {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  &--green::after {
+    background-color: $color-primary;
+  }
+  
   &::after {
     content:"";
     display: inline-block;
@@ -75,3 +84,7 @@
    box-shadow: 0 .5rem 1rem rgba($color-black, 0.3); 
   }
 }
+
+.btn-center {
+  margin-left: 45%;
+  }

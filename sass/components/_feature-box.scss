@@ -1,4 +1,157 @@
 .grid-item2 {
-    background-color: rgba($color-white, 0.8);
-   margin-top: 2rem;
- }
+  background-color: rgba($color-white, 0.8);
+  margin-top: 2rem;
+  text-align: center;
+  transition: all .5s;
+  transform: skewy(6deg);
+}
+
+.headers-color {
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+
+.grid-item3 {
+perspective: 150rem;
+-moz-perspective: 150rem;
+position: relative;
+height: 50rem;
+&__side1 {
+height: 50rem;
+transition: all 1s ease;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ backface-visibility: hidden;
+ border-radius: 3px;
+ box-shadow: 0 1.5rem 4rem rgba($color-black, .8);
+  overflow: hidden;
+  &--front {
+    background-color: white;
+  }
+  &--front2 {
+    background-color: white;
+  }
+     &--front2 {
+    background-color: white;
+  }
+  
+    &--front3 {
+    background-color: white;
+  }
+  &--back {
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+    transform: rotatey(-180deg);
+  }
+   &--back2 {
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    transform: rotatey(-180deg);
+  }
+  
+       &--back3 {
+    background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+    transform: rotatey(-180deg);
+  }
+  &--card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+  }
+  &--pricebox{
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+    
+  }
+  &--price-only{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  &--price-value{
+    font-size: 6rem;
+    font-weight: 100;
+  }
+}
+
+
+&:hover &__side1--front {
+  transform: rotatey(180deg);
+}
+  &:hover &__side1--front2 {
+  transform: rotatey(180deg);
+}
+ &:hover &__side1--front3 {
+  transform: rotatey(180deg);
+}
+  &:hover &__side1--back {
+  transform: rotatey(0deg);
+}
+  &:hover &__side1--back2 {
+  transform: rotatey(0deg);
+}
+ &:hover &__side1--back3 {
+  transform: rotatey(0deg);
+}
+  
+&__picture {
+
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  &--1{
+  background-image: linear-gradient(to right bottom,     $color-secondary-light, $color-secondary-dark), url('https://media-cdn.tripadvisor.com/media/photo-s/11/6a/51/b4/sunny-beach-bulgaria.jpg');
+}
+ &--2{
+  background-image: linear-gradient(to right bottom,     $color-primary-light, $color-primary-dark), url('https://delawarehighlands.org/wp-content/uploads/Trees-Forest-1368x889.jpg');
+}
+    &--3{
+  background-image: linear-gradient(to right bottom,     $color-tertiary-light, $color-tertiary-dark), url('https://images.unsplash.com/photo-1418290368169-1c94e6683532?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+}
+}
+   &__heading {
+    font-size: 2.8rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    left: 0rem;
+    text-align: left;
+    width: 75%;
+  } 
+&__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  &--1{
+    background-image: linear-gradient(to right bottom,     rgba($color-secondary-light, 0.85), rgba($color-secondary-dark, 0.85))
+  }
+      &--2{
+    background-image: linear-gradient(to right bottom,     rgba($color-primary-light, 0.85), rgba($color-primary-dark, 0.85))
+  }
+      &--3{
+    background-image: linear-gradient(to right bottom,     rgba($color-tertiary-light, 0.85), rgba($color-tertiary-dark, 0.85))
+  }
+}
+&__details{
+  ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+    li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;        
+      &:not(:last-child){
+        border-bottom: 1px solid $color-grey-light-2;
+      }
+    }
+  }
+}
+}

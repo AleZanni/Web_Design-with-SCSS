@@ -1,12 +1,15 @@
-.section-about {
+.section-about, .section-tours {
   background-color: $color-grey-light-1;
-  padding: 25rem 0;
-  margin-top: -20vh;
+  padding: 25rem 0 15rem 0;
+  margin-top: -25vh;
+}
+.section-features {
+ height: 90vh; 
+ transform: skewy(-6deg);
+ margin-top: -10rem;
 }
 
-.section-features {
-  height: 80vh;
- background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url("https://b.kisscc0.com/20180517/fqq/kisscc0-road-desert-desktop-wallpaper-landscape-propzee-nature-5afd60f002bb30.9295929115265548640112.jpg");
-   background-size: cover;
-   background-position: bottom;
- }
+.section-stories {
+  padding: 0rem 0 3rem 0;
+  position: relative;
+}

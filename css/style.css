@@ -41,7 +41,7 @@ body {
   font-family: "lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #808080;
+  color: #777;
   padding: 3rem; }
 
 .heading-primary {
@@ -100,7 +100,13 @@ body {
   margin-bottom: 4rem; }
 
 .u-margin-bottom-big {
-  margin-bottom: 15rem; }
+  margin-bottom: 8rem; }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -121,8 +127,15 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
 
 .btn--white {
-  color: #808080;
+  color: #777;
   background-color: #fff; }
+
+.btn--green {
+  color: #fff;
+  background-color: #55c57a; }
+
+.btn--green::after {
+  background-color: #55c57a; }
 
 .btn::after {
   content: "";
@@ -165,6 +178,9 @@ body {
   transform: translatey(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
 
+.btn-center {
+  margin-left: 45%; }
+
 .composition {
   position: relative; }
   .composition_photo {
@@ -194,18 +210,141 @@ body {
 
 .grid-item2 {
   background-color: rgba(255, 255, 255, 0.8);
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  text-align: center;
+  transition: all .5s;
+  transform: skewy(6deg); }
+
+.headers-color {
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
+
+.grid-item3 {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .grid-item3__side1 {
+    height: 50rem;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+    overflow: hidden; }
+    .grid-item3__side1--front {
+      background-color: white; }
+    .grid-item3__side1--front2 {
+      background-color: white; }
+    .grid-item3__side1--front2 {
+      background-color: white; }
+    .grid-item3__side1--front3 {
+      background-color: white; }
+    .grid-item3__side1--back {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+      transform: rotatey(-180deg); }
+    .grid-item3__side1--back2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+      transform: rotatey(-180deg); }
+    .grid-item3__side1--back3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+      transform: rotatey(-180deg); }
+    .grid-item3__side1--card {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .grid-item3__side1--pricebox {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 8rem; }
+    .grid-item3__side1--price-only {
+      font-size: 1.4rem;
+      text-transform: uppercase; }
+    .grid-item3__side1--price-value {
+      font-size: 6rem;
+      font-weight: 100; }
+  .grid-item3:hover .grid-item3__side1--front {
+    transform: rotatey(180deg); }
+  .grid-item3:hover .grid-item3__side1--front2 {
+    transform: rotatey(180deg); }
+  .grid-item3:hover .grid-item3__side1--front3 {
+    transform: rotatey(180deg); }
+  .grid-item3:hover .grid-item3__side1--back {
+    transform: rotatey(0deg); }
+  .grid-item3:hover .grid-item3__side1--back2 {
+    transform: rotatey(0deg); }
+  .grid-item3:hover .grid-item3__side1--back3 {
+    transform: rotatey(0deg); }
+  .grid-item3__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .grid-item3__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("https://media-cdn.tripadvisor.com/media/photo-s/11/6a/51/b4/sunny-beach-bulgaria.jpg"); }
+    .grid-item3__picture--2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("https://delawarehighlands.org/wp-content/uploads/Trees-Forest-1368x889.jpg"); }
+    .grid-item3__picture--3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("https://images.unsplash.com/photo-1418290368169-1c94e6683532?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"); }
+  .grid-item3__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    left: 0rem;
+    text-align: left;
+    width: 75%; }
+  .grid-item3__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .grid-item3__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .grid-item3__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+    .grid-item3__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+  .grid-item3__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto; }
+    .grid-item3__details ul li {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem; }
+      .grid-item3__details ul li:not(:last-child) {
+        border-bottom: 1px solid #eee; }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 45% 45%;
-  justify-content: space-evenly; }
+  grid-template-columns: 50% 50%; }
 
 .grid-container2 {
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
   grid-gap: 2rem;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-content: center;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("https://b.kisscc0.com/20180517/fqq/kisscc0-road-desert-desktop-wallpaper-landscape-propzee-nature-5afd60f002bb30.9295929115265548640112.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 90%; }
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 2rem;
+  justify-content: space-evenly;
+  align-content: center; }
 
 .header {
   height: 95vh;
@@ -222,13 +361,72 @@ body {
   transform: translate(-50%, -50%);
   text-align: center; }
 
-.section-about {
+.section-about, .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh; }
+  padding: 25rem 0 15rem 0;
+  margin-top: -25vh; }
 
 .section-features {
-  height: 80vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("https://b.kisscc0.com/20180517/fqq/kisscc0-road-desert-desktop-wallpaper-landscape-propzee-nature-5afd60f002bb30.9295929115265548640112.jpg");
-  background-size: cover;
-  background-position: bottom; }
+  height: 90vh;
+  transform: skewy(-6deg);
+  margin-top: -10rem; }
+
+.section-stories {
+  padding: 0rem 0 3rem 0;
+  position: relative; }
+
+.story {
+  width: 75%;
+  margin: 5rem auto 2rem auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 8rem;
+  font-size: 1.6rem;
+  transform: skew(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50% 50%);
+    shape-outside: circle(50% at 50% 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50% 50%);
+    clip-path: circle(50% at 50% 50% 50%);
+    transform: translatex(-3rem) skew(12deg);
+    position: relative; }
+  .story__img {
+    height: 100%;
+    width: 100%;
+    transition: all .5s; }
+  .story__text {
+    transform: skew(12deg); }
+  .story__caption {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 20%);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: scale(0.8);
+    filter: blur(3px) brightness(80%); }
+
+.img-bck {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .img-bck__picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
