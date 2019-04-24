@@ -22,3 +22,11 @@
   justify-content: space-evenly;
   align-content: center;
 }
+
+.grid-container6 {
+  display: grid;
+  grid-template-columns: 40% 30%;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-content: center;
+}

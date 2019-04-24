@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -8,7 +9,9 @@
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
   }
   
   &:hover {
@@ -25,13 +28,8 @@
     color: $color-grey-dark;
     background-color: $color-white;
   }
-  
-  &--green {
+    &--green {
     color: $color-white;
-    background-color: $color-primary;
-  }
-
-  &--green::after {
     background-color: $color-primary;
   }
   
@@ -51,6 +49,9 @@
   &--white::after {
     background-color: $color-white;
   }
+    &--green::after {
+    background-color: $color-primary;
+  }
   
   &:hover::after {
     transform: scalex(1.4) scaley(1.6);
@@ -61,6 +62,7 @@
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
+
 }
 
 .btn-text {
@@ -84,7 +86,6 @@
    box-shadow: 0 .5rem 1rem rgba($color-black, 0.3); 
   }
 }
-
-.btn-center {
-  margin-left: 45%;
-  }
+  .btn-center {
+      margin-left: 45%;
+      }

@@ -13,6 +13,23 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" class="navigation__link">About Naturos</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Our tours</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Naturos team</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Contact us</a></li>
+          </ul>
+        </nav>            
+      </div>
     <header class="header">   
       <div class="text-box">
       <h1 class="heading-primary">
@@ -193,5 +210,63 @@
       </div>
        <a href="#" class="btn-text btn-center">Learn more &rarr;</a>
     </div>
+</section>
+    <section class="section-book">
+     <div class="grid-container5">
+       <div class="book">
+               <div class="u-margin-bottom-medium heading-secondary-center">
+         <h2 class="heading-secondary">
+           Book now!
+         </h2>
+       </div>
+         <form>
+         <div class="book__form">
+           <div class="form__group">
+             <input type="text" class="form__input" placeholder="Full name" id="name" required>
+             <label for="name" class="form__label">Full name</label>
+           </div>
+            <div class="form__group">
+             <input type="email" class="form__input" placeholder="Email address" id="Email" required>
+             <label for="Email" class="form__label">Email address</label>
+           </div>
+         </div>
+<div class="form__group u-margin-bottom-medium">
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="small" name="size">
+                                        <label for="small" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Small tour group
+                                        </label>
+                                    </div>
+
+                                    <div class="form__radio-group">
+                                        <input type="radio" class="form__radio-input" id="large" name="size">
+                                        <label for="large" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                            Large tour group
+                                        </label>
+                                    </div>
+                                </div>
+
+             <button class="btn btn--green u-margin-top-medium">Next step</button>
+              </div>
+           </div>
+         </form>
+       </div>
+      </div>
+    </section>
+</main>
+<footer class="footer">
+  <div class="grid-container6">
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+      </ul>
+
+    <p>This website was developed by Alessandro Zanni.<br>Copyright &copy; Alessandro Zanni 2019</p>
+  </div>
+</footer>
     </body>
 </html>

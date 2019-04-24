@@ -11,10 +11,10 @@
       width: 15rem;
       height: 15rem;
       float: left;
-      -webkit-shape-outside: circle(50% at 50% 50% 50%);
-      shape-outside: circle(50% at 50% 50% 50%);
-      -webkit-clip-path: circle(50% at 50% 50% 50%);
-      clip-path: circle(50% at 50% 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
       transform: translatex(-3rem) skew(12deg);
       position: relative; 
     }
@@ -44,7 +44,7 @@
       transform: translate(-50%, -50%);
     }
     &:hover &__img {
-      transform: scale(.8);
+      transform: scale(.96);
       filter: blur(3px) brightness(80%);
     }
   }

@@ -13,3 +13,20 @@
   padding: 0rem 0 3rem 0;
   position: relative;
 }
+
+.section-book {
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+ padding: 15rem 0;
+}
+.book {
+  background-image: linear-gradient(100deg, 
+    rgba($color-white, .9) 0%,
+    rgba($color-white, .9) 50%, 
+    transparent 50%) ,url('https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/norway/hiking_litlefjellet_andalsnes_norway_2_1_9133c8d8-8524-4326-9c33-de8358fa370a.jpg');
+ background-size: cover;
+ height: 50rem;
+ width: 75%;
+ margin: auto;
+ border-radius: 3px;
+ box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
+}
