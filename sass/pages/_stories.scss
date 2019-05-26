@@ -1,22 +1,28 @@
 .story{
     width: 75%;
-    margin: 5rem auto 2rem auto;
+    margin: 5rem auto 3rem auto;
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
     background-color: rgba($color-white, .6);
     border-radius: 3px;
     padding: 8rem;
     font-size: $default-font-size;
     transform: skew(-12deg);
+    @include respond(phone) {
+    transform:  skew(0deg);
+      }
     &__shape{
       width: 15rem;
       height: 15rem;
-      float: left;
       -webkit-shape-outside: circle(50% at 50% 50%);
       shape-outside: circle(50% at 50% 50%);
       -webkit-clip-path: circle(50% at 50% 50%);
       clip-path: circle(50% at 50% 50%);
       transform: translatex(-3rem) skew(12deg);
       position: relative; 
+      margin-bottom: 2rem;
+      @include respond(phone) {
+        transform: translatex(-3rem) skew(0deg);
+        }
     }
     &__img {
       height:100%;
@@ -25,6 +31,9 @@
     }
     &__text {
       transform: skew(12deg);
+      @include respond(phone) {
+        transform:  skew(0deg);
+          }
     }
     &__caption {
       top: 50%;

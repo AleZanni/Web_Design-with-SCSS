@@ -47,6 +47,11 @@ form{
     &__radio-group {
     display: inline-block;
     width: 20%;
+    @include respond(phone) {
+      display: block;
+      margin: auto;
+      width: 40%;
+        }
     }
     &__radio-input {
       display: none;
@@ -84,4 +89,7 @@ form{
     &__radio-input:checked ~ &__radio-label &__radio-button::after {
         opacity: 1;
       }
+    &__button {
+      margin-bottom: 1rem;
+    }
     }
