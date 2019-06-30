@@ -25,7 +25,7 @@ color: transparent;
   position: relative;
 height: 50rem;
       @include respond(tab-port) {
-transform: skewy(0deg);
+transform: skewy(0deg); 
     margin-right: 10rem;
     margin-left: 10rem;
   }
@@ -60,15 +60,30 @@ transform: skewy(0deg);
     &--back {
       background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
       transform: rotatey(-180deg);
+      @include respond(phone) {
+       display: none;
+       visibility: hidden;
+       transform: initial;
+      }
     }
      &--back2 {
       background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
       transform: rotatey(-180deg);
+      @include respond(phone) {
+        display: none;
+        visibility: hidden;
+        transform: initial;
+       }
     }
     
          &--back3 {
       background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
       transform: rotatey(-180deg);
+      @include respond(phone) {
+        display: none;
+        visibility: hidden;
+        transform: initial;
+       }
     }
     &--card{
       position: absolute;
@@ -95,12 +110,21 @@ transform: skewy(0deg);
   
   &:hover &__side1--front {
     transform: rotatey(180deg);
+    @include respond(phone) {
+      transform: rotatey(0deg)
+    }
   }
     &:hover &__side1--front2 {
     transform: rotatey(180deg);
+    @include respond(phone) {
+      transform: rotatey(0deg)
+    }
   }
    &:hover &__side1--front3 {
     transform: rotatey(180deg);
+    @include respond(phone) {
+      transform: rotatey(0deg)
+    }
   }
     &:hover &__side1--back {
     transform: rotatey(0deg);
